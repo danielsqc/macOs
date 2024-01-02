@@ -54,6 +54,7 @@ const rules: KarabinerRules[] = [
       ),
       i: app("IntelliJ IDEA Ultimate"),
       n: app("Notion"),
+      p: app("Bitwarden"),
       s: app("Slack"),
       t: app("iterm"),
       v: app("Visual Studio Code"),
