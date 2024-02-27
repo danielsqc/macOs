@@ -29,5 +29,6 @@ return {
     vim.keymap.set('n', '<leader>dso', function() require('dap').step_over() end)
     vim.keymap.set('n', '<leader>dsi', function() require('dap').step_into() end)
     vim.keymap.set({'n', 'v'}, '<Leader>dh', function() require('dap.ui.widgets').hover() end)
+    vim.keymap.set('n', '<leader>du', dapui.toggle, {})
   end,
 }
