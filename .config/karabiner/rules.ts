@@ -194,70 +194,70 @@ const rules: KarabinerRules[] = [
 
     // s = "Numbers" It doesn't make sense, but it's easy to use
     s: {
-      b: {
+      h: {
         to: [
           {
             key_code: "0",
           },
         ],
       },
-      n: {
+      j: {
         to: [
           {
             key_code: "1",
           },
         ],
       },
-      m: {
+      k: {
         to: [
           {
             key_code: "2",
           },
         ],
       },
-      comma: {
+      l: {
         to: [
           {
             key_code: "3",
           },
         ],
       },
-      j: {
+      semicolon: {
         to: [
           {
             key_code: "4",
           },
         ],
       },
-      k: {
+      u: {
         to: [
           {
             key_code: "5",
           },
         ],
       },
-      l: {
+      i: {
         to: [
           {
             key_code: "6",
           },
         ],
       },
-      u: {
+      o: {
         to: [
           {
             key_code: "7",
           },
         ],
       },
-      i: {
+      p: {
         to: [
           {
             key_code: "8",
           },
         ],
       },
-      o: {
+      open_bracket: {
         to: [
           {
             key_code: "9",
@@ -288,19 +288,18 @@ const rules: KarabinerRules[] = [
     },
 
     // Doesn't make sense, but it's easy to use
-    //
     a: {
       h: {
         to: [{ key_code: "left_arrow" }],
       },
       j: {
-        to: [{ key_code: "down_arrow" }],
+        to: [{ key_code: "down_arrow", },],
       },
       k: {
-        to: [{ key_code: "up_arrow" }],
+        to: [{ key_code: "up_arrow", },],
       },
       l: {
-        to: [{ key_code: "right_arrow" }],
+        to: [{ key_code: "right_arrow", },],
       },
       // Magicmove via homerow.app
       m: {
@@ -321,37 +320,30 @@ const rules: KarabinerRules[] = [
       },
     },
 
-    // c = Musi*c* which isn't "m" because we want it to be on the left hand
-    c: {
-      p: {
-        to: [{ key_code: "play_or_pause" }],
+    // Doesn't make sense, but it's easy to use
+    // Limiters
+    q: {
+      u: {
+        to: [{ key_code: "9", modifiers: ["left_shift"]}], 
+      },
+      i: {
+        to: [{ key_code: "0", modifiers: ["left_shift"]}], 
+      },
+      j: {
+        to: [{ key_code: "open_bracket" }], 
+      },
+      k: {
+        to: [{ key_code: "close_bracket" }], 
       },
       n: {
-        to: [{ key_code: "fastforward" }],
+        to: [{ key_code: "open_bracket", modifiers: ["left_shift"]}], 
       },
-      b: {
-        to: [{ key_code: "rewind" }],
+      m: {
+        to: [{ key_code: "close_bracket", modifiers: ["left_shift"]}], 
       },
-    },
-
-    // r = "Raycast"
-    r: {
-      l: open(
-        "raycast://extensions/stellate/mxstbr-commands/create-mxs-is-shortlink"
-      ),
-      e: open("raycast://extensions/raycast/emoji/search-emoji"),
-      c: open("raycast://extensions/raycast/raycast/confetti"),
-      a: open("raycast://extensions/raycast/raycast-ai/ai-chat"),
-      s: open("raycast://extensions/peduarte/silent-mention/index"),
-      h: open(
-        "raycast://extensions/raycast/clipboard-history/clipboard-history"
-      ),
-      1: open(
-        "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-1"
-      ),
-      2: open(
-        "raycast://extensions/VladCuciureanu/toothpick/connect-favorite-device-2"
-      ),
+      o: {
+        to: [{ key_code: "hyphen", modifiers: ["left_shift"]}], 
+      },
     },
   }),
 ];
